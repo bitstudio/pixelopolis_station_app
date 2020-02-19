@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "441935137536",
+    "firebase_url": "https://pixelopolis-station.firebaseio.com",
+    "project_id": "pixelopolis-station",
+    "storage_bucket": "pixelopolis-station.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441935137536:android:2eb56b1c92fff1514281e5",
+        "android_client_info": {
+          "package_name": "com.bit.pixelopolis_station"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441935137536-68fufhpu0tk1p1h50ged8ojk4c94v42j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bit.pixelopolis_station",
+            "certificate_hash": "62f3bc6894a1d06ea12456b681f0d482ccc8bd71"
+          }
+        },
+        {
+          "client_id": "441935137536-uu6j9456spgnje86fe9nsv3orou48v40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bit.pixelopolis_station",
+            "certificate_hash": "d019ab7afae9274079a17554a04265e8efc63ad9"
+          }
+        },
+        {
+          "client_id": "441935137536-pfqu71r198djbcs09d1lpv2s07dlng5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_fM6SVDf5iHc2MyhE224bPYmmexamC0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441935137536-pfqu71r198djbcs09d1lpv2s07dlng5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

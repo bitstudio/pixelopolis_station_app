@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/root_view">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/background_animation_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dp"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bg"
+        />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="400dp"
+        android:layout_height="533dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    </WebView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bit.pixelopolis_station.activities.NavigateCarActivity">
+
+    <Button
+        android:id="@+id/reload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Reload Streaming"
+        android:onClick="onClickReloadButton"/>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Cancel Place Selection"
+        android:onClick="onClickCancelButton"/>
+</LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/journey_start_animation_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:lottie_loop="false"
+        app:lottie_autoPlay="true"
+        android:layout_margin="0dp"
+        android:scaleType="centerCrop"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/arrived_animation_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:lottie_loop="false"
+        app:lottie_autoPlay="false"
+        android:layout_margin="0dp"
+        android:scaleType="centerCrop"
+    />
+
+    <ImageView
+        android:id="@+id/destinationImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/destination_01" />
+
+
+
+</FrameLayout>

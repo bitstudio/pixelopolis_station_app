@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bit.pixelopolis_station.activities.StandbyActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dp"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="standby_bg.zip"
+        tools:layout_editor_absoluteX="-140dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <ImageButton
+        android:id="@+id/startButton"
+        android:layout_width="278dp"
+        android:layout_height="83dp"
+        android:background="#0000"
+        android:onClick="onClickStartButton"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+        app:layout_constraintEnd_toEndOf="@+id/animation_view"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/animation_view"
+        app:layout_constraintVertical_bias="0.788"
+        app:srcCompat="@drawable/standby_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

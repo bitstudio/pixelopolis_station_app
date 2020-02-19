@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.bit.pixelopolis_station.activities.BaseActivity">
+
+    <TextView
+        android:id="@+id/state_textbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/act_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            // Here will be all activity content placed
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/warning_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onClickWarningMessage"
+            android:scaleType="centerCrop"
+        />
+
+        <ImageView
+            android:id="@+id/error_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onClickErrorMessage"
+            android:scaleType="centerCrop"
+        />
+
+        <ImageButton
+            android:id="@+id/disconnect_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_horizontal"
+            android:backgroundTint="@android:color/transparent"
+            android:onClick="onClickDisconnectButton"
+            android:src="@drawable/google_logo_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/station_id_debug_textbox"/>
+
+        <include
+            android:id="@+id/spinner_layout"
+            layout="@layout/spinner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#75FFFFFF"
+            android:clickable="true"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>
